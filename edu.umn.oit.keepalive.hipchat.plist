@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>EnvironmentVariables</key>
+		<!-- "Change these variables to keep an application alive during your work day. Times are in 24. Replace 'HipChat' with your desired applicaiton. " -->
+		<dict>
+			<key>AppName</key>
+			<!-- "Add the proccess name here" -->
+			<string>HipChat</string>
+			<key>ProcessName</key>
+			<!-- "If process name matches application name, leave blank" -->
+			<string></string>
+			<key>StartTime</key>
+			<!-- "Start of your Day" -->
+			<string>9</string>
+			<key>StopTime</key>
+			<!-- "End of your day" -->
+			<string>17</string>
+		</dict>
+		<key>Label</key>
+		<!-- "Change the lable for each itteration of this agent" -->
+		<string>edu.umn.oit.keepalive.hipchat</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/usr/local/bin/AppKeepAlive.sh</string>
+		</array>
+		<key>StartInterval</key>
+		<!-- "300 is 5 Minutes" -->
+		<integer>300</integer>
+	</dict>
+</plist>
+API Training Shop Blog About
